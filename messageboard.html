@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>留言板功能</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+</head>
+<body>
+	<div class="container col-md-7" id="layer">
+		<div class="col-md-12 column">
+			<div class="jumbotron">
+				<h1>留言板 功能</h1>
+				<p>目前只是用JS实现简单的留言板功能，包括页面内无刷新加载评论，删除评论和选择用户头像等。</p>
+				<p>项目正在更新中...</p>
+				<p><a class="btn btn-primary btn-large" href="#" id="enter">点击进入</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="msgBox" style="display: none">
+		<form>
+			<h2>快点来留言吧</h2>
+			<div>
+				<input type="text" id="userName" value="" class="f-text" />
+				<p id="face">
+					<img src="img/face1.png" class="current" />
+					<img src="img/face2.png" />
+					<img src="img/face3.png" />
+					<img src="img/face4.png" />
+					<img src="img/face5.png" />
+					<img src="img/face6.png" />
+					<img src="img/face7.png" />
+					<img src="img/face8.png" />
+					<img src="img/face9.png" />
+				</p>
+			</div>
+			<div><textarea id="conBox" class="f-text"></textarea></div>
+			<div class="tr">
+				<p>
+					<span class="countTxt">还能输入</span><strong class="maxNum">140</strong><span>个字</span>
+					<input id="sendBtn" type="button" value="发 送" title="快捷键 Enter" />
+				</p>
+			</div>
+		</form>
+		<div id="tab">
+			<div class="list">
+				<h3><span>留言板</span></h3>
+				<ul>
+					<li>
+						<div class="userPic"><img src="img/face9.png" /></div>
+						<div class="content">
+							<div class="userName"><a href="javascript:;">测试功能</a>:</div>
+							<div class="msgInfo">测试</div>
+							<div class="times">
+								<span>1月05日 15:14</span>
+								<a class="del" href="javascript:;">删除</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="userPic"><img src="img/face8.png" /></div>
+						<div class="content">
+							<div class="userName"><a href="javascript:;">测试功能</a>:</div>
+							<div class="msgInfo">试试就试试</div>
+							<div class="times">
+								<span>1月05日 15:14</span>
+								<a class="del" href="javascript:;">删除</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>			
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/utils.js"></script>
+	<script type="text/javascript" src="javascript/main.js"></script>
+</body>
+</html>
